@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "351204746537",
+    "firebase_url": "https://sathyabama-official-app-cd4bc.firebaseio.com",
+    "project_id": "sathyabama-official-app-cd4bc",
+    "storage_bucket": "sathyabama-official-app-cd4bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351204746537:android:938c6044824b5113",
+        "android_client_info": {
+          "package_name": "com.projectteamsist.sathyabama_official"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351204746537-kqi6f9ekhj6053hus2cni4b8mdl7pmuq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.projectteamsist.sathyabama_official",
+            "certificate_hash": "184882ed816e3f6ed1e8e1df7d1f570c13894a74"
+          }
+        },
+        {
+          "client_id": "351204746537-7cglp22kug718uavmv9q1jugtoi82dcs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAAEmT8itcEs7OP_wnLLmvWOTnPN9byx0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "351204746537-7cglp22kug718uavmv9q1jugtoi82dcs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
