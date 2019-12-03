@@ -6,7 +6,7 @@ import 'package:connectivity/connectivity.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:url_launcher/url_launcher.dart';
+import 'package:sathyabama_official/utils/url_launch.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'package:pk_skeleton/pk_skeleton.dart';
 import 'package:sathyabama_official/models/circular_model.dart';
@@ -41,20 +41,14 @@ class _CircularsState extends State<Circulars> {
       return circulars;
     }
   }
-
+  LaunchURL launchUrl = LaunchURL();
   @override
   void initState() {
     super.initState();
     // fetchCircular();
   }
 
-  _launchURL(url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
+
 
   @override
   void dispose() {
@@ -133,7 +127,7 @@ class _CircularsState extends State<Circulars> {
                                 ),
                                 title: InkWell(
                                     onTap: () {
-                                      _launchURL(myData[index].url);
+                                      launchUrl.launchUrlInBrowser(myData[index].url);
                                     },
                                     child: Text(
                                       "View PDF",

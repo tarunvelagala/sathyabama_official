@@ -7,7 +7,7 @@ import 'package:sathyabama_official/screens/url_route.dart';
 import 'package:sathyabama_official/services/shared_prefs_service.dart';
 import 'package:sathyabama_official/utils/dicts.dart';
 import 'dart:ui' as ui;
-
+import 'package:sathyabama_official/utils/url_launch.dart';
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -35,6 +35,7 @@ class _HomePageState extends State<HomePage> {
       fit: height > 800.0 ? BoxFit.fitHeight : BoxFit.cover,
       image: assetImage,
     );
+    LaunchURL launchUrl = LaunchURL();
     return Scaffold(
       key: _scaffoldKey,
       resizeToAvoidBottomPadding: false,
@@ -125,13 +126,13 @@ class _HomePageState extends State<HomePage> {
                               CupertinoPageRoute(
                                   builder: (BuildContext context) =>
                                       browserData[k][0]))
-                          : Navigator.push(
+                          :launchUrl.launchUrlInBrowser(browserData[k][0]) /*Navigator.push(
                               context,
                               CupertinoPageRoute(
                                   builder: (BuildContext context) => UrlRoute(
                                         url: browserData[k][0],
                                         title: k,
-                                      )));
+                                      )))*/;
                     },
                     child: ListTile(
                       title: new Text(
@@ -176,13 +177,13 @@ class _HomePageState extends State<HomePage> {
                             CupertinoPageRoute(
                                 builder: (BuildContext context) =>
                                     browserData[k][0]))
-                        : Navigator.push(
+                        :launchUrl.launchUrlInBrowser(browserData[k][0]) /*Navigator.push(
                             context,
                             CupertinoPageRoute(
                                 builder: (BuildContext context) => UrlRoute(
                                       url: browserData[k][0],
                                       title: k,
-                                    )));
+                                    )))*/;
                   },
                   child: Card(
                     margin:
@@ -356,9 +357,9 @@ class _HomePageState extends State<HomePage> {
                     child: Padding(
                       padding: height > 800
                           ? const EdgeInsets.only(
-                              right: 20.0, left: 8.0, top: 10.0)
+                              left:10.0, top: 10.0)
                           : const EdgeInsets.only(
-                              right: 20.0, left: 5.0, top: 10.0),
+                               left: 10.0, top: 10.0),
                       child: Container(
                         width: 50.0,
                         child: ShaderMask(

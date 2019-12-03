@@ -25,7 +25,7 @@ dependencies:
   connectivity:
   shared_preferences:
   flutter_webview_plugin:
-  webview_flutter: ^0.3.10+4
+# webview_flutter:
   line_awesome_icons:
   flutter_form_builder:
   pk_skeleton:

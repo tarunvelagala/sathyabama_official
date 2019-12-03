@@ -1,6 +1,7 @@
 import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'package:sathyabama_official/screens/admission_enquiry.dart';
 import 'package:sathyabama_official/screens/bus_routes.dart';
+import 'package:sathyabama_official/screens/complain_us.dart';
 import 'package:sathyabama_official/screens/learn_online.dart';
 import 'package:sathyabama_official/screens/circulars.dart';
 import 'package:sathyabama_official/screens/staff_circulars_login.dart';
@@ -24,8 +25,13 @@ Map<String, List> socialIcon = {
   ],
   'Reach Us': [
     "https://www.google.com/maps/place/Sathyabama+Institute+Of+Science+And+Technology+admission+office/@12.8732477,80.2198827,17z/data=!4m8!1m2!2m1!1sSathyabama+Institute+Of+Science+And+Technology!3m4!1s0x3a525ba20ad20ce7:0x106c443419e3ebb8!8m2!3d12.8729996!4d80.2218877",
-    LineAwesomeIcons.street_view
+    LineAwesomeIcons.map_marker
   ],
+  "Contact Us":[
+    "http://www.sathyabama.ac.in/sitepagethree.php?mainref=23",
+    LineAwesomeIcons.phone
+
+  ]
 };
 Map<String, List> browserData = {
   "Academic Calendar": [
@@ -40,11 +46,11 @@ Map<String, List> browserData = {
     "Bus\nInformation",
     true
   ],
-  "Contact Us": [
-    "http://www.sathyabama.ac.in/sitepagethree.php?mainref=23",
-    LineAwesomeIcons.phone,
-    "Contact\nUs",
-    false
+  "Complain Us": [
+    ComplainUs(),
+    LineAwesomeIcons.exclamation_circle,
+    "Complain\nUs",
+    true
   ],
   "Entrance Exam Portal": [
     "https://www.sathyabama.ac.in/online_entrance_home.php",
@@ -83,7 +89,7 @@ Map<String, List> browserData = {
     true
   ],
   "Academic Syllabus": [
-    "https://www64.zippyshare.com/v/eTz92ahz/file.html",
+    "http://cloudportal.sathyabama.ac.in/syllabus2019/syllabus.php",
     LineAwesomeIcons.book,
     "Academic\nSyllabus",
     false
